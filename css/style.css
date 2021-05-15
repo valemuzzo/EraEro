@@ -1,0 +1,34 @@
+.top {
+  background-color: #f7a928;
+  height: 50px;
+}
+.navegacion {
+  background-color: #fff;
+  height: 100px;
+}
+#banner {
+  background-image: url("../images/encabezado.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 230px;
+  overflow: hidden;
+  padding: 20px;
+}
+#download {
+  background-color: #038287;
+  padding: 20px;
+}
+
+#contacto {
+  background-color: #275d71;
+  padding: 20px;
+}
+#footer {
+  background-color: #2a3c5c;
+  height: 120px;
+}
+#about,
+#categorias {
+  background-color: #fff;
+}
