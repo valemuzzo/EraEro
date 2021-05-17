@@ -2,22 +2,97 @@
   background-color: #f7a928;
   height: 50px;
 }
+
+.menuSuperior {
+  max-width: 85%;
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
 .navegacion {
   background-color: #fff;
-  height: 100px;
+  margin-left: auto;
+  font-family: 'Raleway', sans-serif;
 }
+
+.textoRedes {
+  align-content: center;
+}
+
+.textoRedes p {
+  font-weight: bold;
+  color: #275d71;
+  margin-right: 20px;
+  text-align: right;
+  line-height: 25px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.iconosRedes img {
+  width: 32px;
+}
+
+h1 {
+  font-size: 40px;
+  color:#275d71;
+  text-align: right;
+  font-family: 'Raleway', sans-serif;
+  font-weight:700;
+}
+
+h2 {
+  font-size: 40px;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight:700;
+}
+
+h3 {
+  font-size: 30px;
+  color: #f7a928;
+  font-family: 'Raleway', sans-serif;
+  font-weight:bolder;
+}
+
 #banner {
   background-image: url("../images/encabezado.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
-  min-height: 230px;
+  min-height: 300px;
   overflow: hidden;
-  padding: 20px;
+  padding: 8%;
 }
+
+#banner p {
+  text-align: right;
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
 #download {
-  background-color: #038287;
+  background-color: #03B2B7;
   padding: 20px;
+  display: flex;
+
+}
+
+.imagenDescarga img {
+  width: 80%;
+  border-radius: 7px;
+  margin-left: 10%;
+}
+
+.textoDescarga {
+  text-align: left;
+  color:#2a3c5c;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
 }
 
 #contacto {
@@ -27,8 +102,21 @@
 #footer {
   background-color: #2a3c5c;
   height: 120px;
+  text-align: center;
+  color: #fff;
+  line-height: 30px;
+  padding-top: 20px;
 }
-#about,
+
+#about {
+  text-align: center;
+  margin: 20px 0px 20px 0px;
+}
+
+#about p {
+  color: #2a3c5c;
+}
+
 #categorias {
   background-color: #fff;
 }
