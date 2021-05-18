@@ -58,6 +58,21 @@ h3 {
   font-weight:bolder;
 }
 
+h4 {
+  font-size: 18px;
+  color:#2a3c5c;
+  font-family: 'Raleway', sans-serif;
+  text-align: right;
+}
+
+h5 {
+  font-size: 30px;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+  font-weight: bolder;
+}
+
 #banner {
   background-image: url("../images/encabezado.jpg");
   background-position: center;
@@ -89,24 +104,18 @@ h3 {
 }
 
 .textoDescarga {
+  flex-direction: column;
   text-align: left;
   color:#2a3c5c;
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
 }
 
-#contacto {
-  background-color: #275d71;
-  padding: 20px;
+.botonDescarga img {
+  width: 25%;
+  margin: 5px 0px 5px 0px;
 }
-#footer {
-  background-color: #2a3c5c;
-  height: 120px;
-  text-align: center;
-  color: #fff;
-  line-height: 30px;
-  padding-top: 20px;
-}
+
 
 #about {
   text-align: center;
@@ -118,5 +127,88 @@ h3 {
 }
 
 #categorias {
+  background-color:beige;
+  display: flex;
+  flex-direction: row;
+}
+
+#categorias h4 {
+  justify-content: start;
+  margin: 30px 10px 30px 80px;
+}
+
+.categoriaContent {
+  display: flex;
+  flex-direction: row;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.categoriaIcono {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  margin: 5px;
+}
+
+.categoriaIcono img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+}
+
+.catPrincipales {
+  display: flex;
+  justify-content: center;
+}
+
+.catPrincipales img {
+  width: 23%;
+  margin: 15px;
+}
+
+#contacto {
+  background-color: #275d71;
+  padding: 20px;
+}
+
+.contactoContent {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.contactoTxt {
+  max-width: 50%;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.newsletter {
+  max-width: 50%;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: left;
+  color: #fff;
+  font-size: 19px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.anteFooter {
   background-color: #fff;
+  height: 30px;
+}
+
+#footer {
+  background-color: #2a3c5c;
+  height: 120px;
+  text-align: center;
+  color: #fff;
+  line-height: 30px;
+  padding-top: 20px;
 }
