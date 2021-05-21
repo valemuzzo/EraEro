@@ -168,6 +168,7 @@ h5 {
   background-color: #03b2b7;
   padding: 20px;
   display: flex;
+  margin-bottom: 30px;
 }
 
 .imagenDescarga img {
@@ -210,7 +211,8 @@ h5 {
   background-color: #fff;
   /*background-color: beige;*/
   display: flex;
-  flex-direction: row;
+  flex-direction: row wrap;
+  
 }
 
 #categorias h4 {
@@ -219,13 +221,13 @@ h5 {
 }
 
 .categoriaContent {
-  display: flex;
+  /*display: flex;
   flex-direction: row;
   max-width: 80%;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto;*/
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;margin-bottom: 20px;
 }
 
 .categoriaIcono {
@@ -233,7 +235,7 @@ h5 {
   color: #2a3c5c;
   font-size: 0.7em;
   flex-direction: column;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   text-align: center;
   margin: 20px;
 }
@@ -241,7 +243,7 @@ h5 {
 .categoriaIcono img {
   margin-left: auto;
   margin-right: auto;
-  width: 50px;
+  width: 70px;
 }
 
 .catPrincipales {
@@ -250,8 +252,11 @@ h5 {
 }
 
 .catPrincipales img {
-  width: 23%;
-  margin: 15px;
+  margin-bottom: 3em;
+  width: 30%;
+ /* width: 23%;
+  margin: 15px;*/
+  
 }
 
 /*---Seccion Contacto---*/
