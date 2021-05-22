@@ -25,27 +25,32 @@
       <div class="logo">ero</div>
       <div class="buscador">
         <div class="input-group my-2">
-          <input type="search" class="campoSearch" placeholder="buscar..."  />
-          <span id="search" style="cursor:pointer">
+          <input type="search" class="campoSearch" />
+          <span id="search" style="cursor:pointer; color:#fff">
             <i class="fas fa-search"></i>
           </span>
         </div>
       </div>
     </div>
-    <div class="menuSuperior">
-        <div class="textoRedes">
-          <p>Seguinos en <br> nuestras redes</p>
+    <div class="menuSuperior d-flex flex-column flex-md-row text-center text-ms-left px-0 px-ms-3">
+        <div class="d-flex flex-column flex-md-row col-12 col-md-6"><!--div auxiliar-->
+        <div class="textoRedes col-12 col-md-3 text-center text-md-right px-0">
+          <p>Seguinos en nuestras redes</p>
         </div>
-        <div class="iconosRedes">
+        <div class="iconosRedes col-12 col-sm-4  mt-sm-3">
           <i class="fab fa-facebook-f white-text"></i>
           <i class="fab fa-instagram white-text"></i>
           <i class="fab fa-youtube white-text"></i>
         </div>
-      <div class="navegacion">
-        <ul class="nav justify-content-end">
-            <li class="boton-azul mr-3">
+      </div>
+      <div class="navegacion d-flex flex-column flex-md-row justify-content-end col-12 col-md-6 my-2">
+        <ul class="nav py-2">
+          <div class="d-flex mx-auto mb-3 mb-md-0 mr-0 mr-md-3"><!--div auxiliar-->
+            <li class="boton-azul">
             <a href="#">Convertite en ERO</a>
             </li>
+          </div>
+          <div class="d-flex flex-row mx-auto "><!--div auxiliar-->
             <li class="nav-item">
             <a class="nav-link" href="#">Seguros</a>
             </li>
@@ -53,8 +58,9 @@
             <a class="nav-link" href="#">Tutoriales</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Categorías</a>
+            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Categorías</a>
             </li>
+          </div>
         </ul>
     </div>
     </div>
@@ -68,28 +74,37 @@
     </div>  
             
     <section id="about">
-      <h2>¿Qué es la Era Ero?</h2>
+      <h3>¿Qué es la Era Ero?</h3>
       <h5>Es una plataforma de servicios en los cuales tanto trabajadores como clientes se ven beneficiados.<br>
         Es gratuito, rápido y confiable para conectar EROS con sus potenciales clientes.<br>
-        Utilizamos tecnología disruptiva para cambiar rotundamente la forma de buscar servicios y trabajo,<br>adaptándonos continuamente al cambio.</h5>
+        Utilizamos tecnología disruptiva para cambiar rotundamente la forma de buscar servicios y trabajo, adaptándonos continuamente al cambio.</h5>
     </section>
-    <section id="download">
-      <div class="imagenDescarga">
-        <img src="images/descarga-la-app.jpg">
+    <section id="download" class="d-flex flex-wrap">
+      <div class="col-12 col-md-6">
+        <!--img src="images/descarga-la-app.jpg" será un video-->
+        <video poster="images/descarga-la-app.jpg" controls>
+          <source src="mov_bbb.mp4" type="video/mp4">
+          <source src="mov_bbb.ogg" type="video/ogg">
+          
+        </video>
+        
       </div>
-      <div class="textoDescarga">
+      <!-- con text-center alineamos los elementos al centro pero en resoluciones md o mayor serán alineados a la izquierda-->
+      <div class="col-12 col-md-6 text-center text-md-left">
         <h2>¡Descarga la app!</h2>
-        <p>Y empezá a ser parte<br>de esta nueva era.</p>
+        <div class="col-12 col-md-6 pl-0"><h4>Y empezá a ser parte <br>de esta nueva era.</h4></div>
         <div class="botonDescarga">
           <img src="images/descarga2.png" alt="get it on googleplay"><br>
           <img src="images/descarga1.png" alt="get it on appstore">
         </div>
       </div>
     </section>  
-    <section id="categorias d-flex col-12 col-md-6">
-      
-      <div class="categoriaContent d-flex flex-wrap">
-        <div class="col-12 col-md-3 px-md-5"><h4>Nuestras Categorías más solicitadas</h4></div>
+    <section id="categorias d-flex">
+      <!--categoriaContent se muestra en columna pero cuando está en una resolucion md o mayor (pc) se mostrará en row.
+      my (margenes superior e inferior tendran un espaciado de 4 y en resoluciones md o mayor, el margen será 0)-->
+      <div class="categoriaContent d-flex flex-column  flex-md-row my-4 my-md-0 ">
+        <div class="text-md-right text-center"><h5>Nuestras Categorías <br>más solicitadas</h5></div>
+        <div class="d-flex flex-row align-items-around"><!--div auxiliar para mantener el row (elementos alineados horizontalmente)-->
         <div class="categoriaIcono">
           <img src="images/categorias.png" alt="categoria hogar">
           Hogar
@@ -106,30 +121,34 @@
           <img src="images/categorias.png" alt="categoria hogar">
           Construcción
         </div>
-        <div class="categoriaIcono">
+        <!--desde acá estos íconos no se mostrarán pero en resoluciones md o mayor sí se verán (d es display)-->
+        <div class="categoriaIcono column d-none d-md-block">
           <img src="images/categorias.png" alt="categoria hogar">
-         Belleza
+         <br/>Belleza
         </div>
-        <div class="categoriaIcono">
+        <div class="categoriaIcono d-none d-md-block">
           <img src="images/categorias.png" alt="categoria hogar">
-          Legal
+          <br/>Legal
         </div>
-        <div class="categoriaIcono">
+        <div class="categoriaIcono d-none d-md-block">
           <img src="images/categorias.png" alt="categoria hogar">
-          Educación
+          <br/>Educación
         </div>
-        <span class="boton-nar ml-4 mr-2"><a href="#">Ver más</a></span>
-        </div>
+      </div>
+        <div class="boton-nar mt-2 mt-md-0"><a href="#">Ver más</a></div>
+        
         
       </div>
-      <div class="catPrincipales d-flex flex-wrap">
+      <div class="catPrincipales d-flex flex-wrap"><!-- flex wrap hace que los elementos bajen-->
         <img src="images/principales-home.png" class="col-12 col-md-4" alt="ventajas de ser un ero">
+        <!--col-12 quiere decir que la imagen va a abarcar el ancho completo y para resoluciones md o mayor 
+          abarcará solo 4 columnas (12/4) que equivale al 30% de pantalla-->
         <img src="images/principales-home.png" class="col-12 col-md-4" alt="ventajas de ser un ero">
         <img src="images/principales-home.png" class="col-12 col-md-4" alt="ventajas de ser un ero">
       </div>
     </section>
 
-    <section id="contacto" class="d-flex row justify-content-around">
+    <section id="contacto" class="d-flex row justify-content-around mx-0">
       
         <div class="contactoTxt col-12 col-md-6 mb-5">
           <h2>Contacto</h2>

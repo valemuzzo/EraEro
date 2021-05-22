@@ -22,19 +22,18 @@ body {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #fff;
-  width: 30vw;
+  width: 33vw;
 }
 .campoSearch .input-group {
   color: #fff;
 }
 /*---Menu de navegacion---*/
 .menuSuperior {
-  padding: 0 10vw 0 10vw;
-  display: flex;
+  /*display: flex;
   flex-direction: row;
   margin-left: auto;
   margin-right: auto;
-  align-items: center;
+  align-items: center;*/
 }
 
 .navegacion {
@@ -46,7 +45,7 @@ body {
   color: #000;
   font-size: 0.9em;
   font-weight: 400;
-  padding: 0 20px 0 20px;
+  padding: 0 15px 0 15px;
   border-left: 2px solid #f7a928;
 }
 
@@ -57,10 +56,6 @@ body {
 }
 
 /*---Redes Sociales de navegacion superior----*/
-.textoRedes {
-  align-content: center;
-}
-
 .textoRedes p {
   font-family: "Raleway", sans-serif;
   font-size: 1em;
@@ -68,8 +63,7 @@ body {
   line-height: 1.2em;
   font-weight: 600;
   color: #275d71;
-  text-align: right;
-  margin-right: 20px;
+  /* margin-right: 20px;*/
 }
 
 .iconosRedes i {
@@ -120,7 +114,7 @@ body {
   text-decoration: none;
 }
 
-/*---Estilos de textos---*/
+/*---Estilos de textos---
 h1 {
   font-size: 40px;
   color: #275d71;
@@ -142,18 +136,20 @@ h5 {
   font-family: "Raleway", sans-serif;
   text-align: left;
   font-weight: bolder;
-}
+}*/
 
 /*---Seccion Banner---*/
 #banner {
   background-image: url("../images/encabezado.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  /*background-size: 100%;*/
+  background-size: cover;
   min-height: 300px;
   overflow: hidden;
-  padding: 8%;
+
   text-align: right;
+  padding: 30px 20vw 40px 20vw;
 }
 
 #banner p {
@@ -166,42 +162,58 @@ h5 {
 /*---Seccion Descarga---*/
 #download {
   background-color: #03b2b7;
-  padding: 20px;
+  padding: 40px 10vw 40px 10vw;
   display: flex;
-  margin-bottom: 30px;
+}
+#download h2 {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
 }
 
-.imagenDescarga img {
-  width: 80%;
-  border-radius: 7px;
-  margin-left: 10%;
+#download h4 {
+  color: #2a3c5c;
+  font-family: "Raleway", sans-serif;
 }
+
+#download video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+/*.imagenDescarga img {
+  margin: 20px;
+  border-radius: 7px;
+  width: 100%;
+}*/
 
 .textoDescarga {
   flex-direction: column;
-  text-align: left;
+  /*text-align: left;*/
+  margin-left: 0;
   color: #2a3c5c;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
 }
 
 .botonDescarga img {
-  width: 25%;
+  width: 40%;
   margin: 5px 0px 5px 0px;
 }
 
 /*---Seccion About---*/
 #about {
   text-align: center;
-  margin: 30px 0px 30px 0px;
+  padding: 30px 15vw 30px 10vw;
 }
-#about h2 {
+#about h3 {
   color: #f7a928;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
 }
 
 #about h5 {
+  font-family: "Raleway", sans-serif;
   text-align: center;
   color: #2a3c5c;
 }
@@ -212,12 +224,6 @@ h5 {
   /*background-color: beige;*/
   display: flex;
   flex-direction: row wrap;
-  
-}
-
-#categorias h4 {
-  justify-content: start;
-  margin: 30px 10px 30px 80px;
 }
 
 .categoriaContent {
@@ -227,36 +233,40 @@ h5 {
   margin-left: auto;
   margin-right: auto;*/
   align-items: center;
-  justify-content: space-between;margin-bottom: 20px;
+  justify-content: space-between;
+  padding: 0 10vw 10px 10vw;
 }
-
+.categoriaContent h5 {
+  color: #2b819b;
+  font-family: "Raleway", sans-serif;
+}
 .categoriaIcono {
   display: flex;
-  color: #2a3c5c;
+  color: #2b819b;
   font-size: 0.7em;
   flex-direction: column;
-  /*justify-content: space-between;*/
   text-align: center;
-  margin: 20px;
+  margin: 16px;
 }
 
 .categoriaIcono img {
   margin-left: auto;
   margin-right: auto;
-  width: 70px;
+  width: 50px;
+  margin-bottom: 18px;
 }
 
 .catPrincipales {
   display: flex;
   justify-content: center;
+  padding: 0 10vw 0 10vw;
 }
 
 .catPrincipales img {
   margin-bottom: 3em;
-  width: 30%;
- /* width: 23%;
+  /* width: 30%;
+   width: 23%;
   margin: 15px;*/
-  
 }
 
 /*---Seccion Contacto---*/
@@ -266,6 +276,7 @@ h5 {
 }
 
 #contacto h2 {
+  font-family: "Raleway", sans-serif;
   color: #fff;
   font-weight: 600;
 }
@@ -273,6 +284,7 @@ h5 {
 /*---Newsletter---*/
 .newsletter,
 .contactoTxt {
+  font-family: "Raleway", sans-serif;
   text-align: left;
   color: #fff;
   font-size: 19px;
@@ -286,10 +298,13 @@ h5 {
 }
 
 #footer {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  font-size: 0.8em;
   background-color: #2a3c5c;
   height: 120px;
   text-align: center;
-  color: #fff;
+
   padding-top: 20px;
 }
 .icoRedesFooter i {
