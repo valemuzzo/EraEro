@@ -10,6 +10,16 @@ body {
   font-size: 25px;
   line-height: 42px;
 }
+
+.logo a {
+  color:#fff;
+}
+
+.logo a:hover {
+  color: #bb8124;
+  text-decoration: none;
+}
+
 .top {
   background-color: #f7a928;
   height: 50px;
@@ -159,6 +169,30 @@ h5 {
   font-family: "Raleway", sans-serif;
 }
 
+#bannerseguros {
+  background-image: url("../images/seguros.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  /*background-size: 100%;*/
+  background-size:cover;
+  min-height: 300px;
+  overflow: hidden;
+  padding: 30px 20vw 40px 20vw;
+  margin-bottom: 3em;
+}
+
+#bannerseguros h1 {
+  color: #fff;
+  text-align: center;
+}
+
+#bannerseguros p {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+}
+
 /*---Seccion Descarga---*/
 #download {
   background-color: #03b2b7;
@@ -262,11 +296,76 @@ h5 {
   padding: 0 10vw 0 10vw;
 }
 
-.catPrincipales img {
+/*.catPrincipales img {
   margin-bottom: 3em;
-  /* width: 30%;
-   width: 23%;
-  margin: 15px;*/
+}*/
+
+.erocliente {
+  background-image: url(../images/erocliente.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 350px;
+  margin-bottom: 3em;
+}
+
+.erocliente:hover {
+  opacity: 90%;
+}
+
+.erocliente h2 {
+  color: #fff;
+  text-align: left;
+  margin-left: 6%;
+  font-size: 40px;
+  margin-top: 20%;
+}
+
+.erocliente p {
+  color: #f7a928;
+  text-align: left;
+  margin-left: 6%;
+  font-size: 18px;
+}
+
+.erocliente span {
+  margin-left: 7.5em;
+}
+
+/*---Seccion Seguros---*/
+
+.seguro {
+  background-image: url(../images/erocliente.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 320px;
+  margin-bottom: 3em;
+  border-radius: 8px 0px 8px 0px;
+  margin: 0px 5px 10px 5px;
+}
+
+.seguro:hover {
+  opacity: 90%;
+}
+
+.seguro h2 {
+  color: #fff;
+  text-align: left;
+  margin-left: 6%;
+  font-size: 40px;
+  margin-top: 20%;
+}
+
+.seguro p {
+  color: #f7a928;
+  text-align: left;
+  margin-left: 6%;
+  font-size: 18px;
 }
 
 /*---Seccion Contacto---*/
