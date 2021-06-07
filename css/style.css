@@ -12,7 +12,7 @@ body {
 }
 
 .logo a {
-  color:#fff;
+  color: #fff;
 }
 
 .logo a:hover {
@@ -170,15 +170,16 @@ h5 {
 }
 
 #bannerseguros {
+  font-family: "Raleway", sans-serif;
   background-image: url("../images/seguros.jpg");
-  background-position: center;
+  background-position: 0 -130px;
   background-repeat: no-repeat;
+
   /*background-size: 100%;*/
-  background-size:cover;
-  min-height: 300px;
+  background-size: cover;
+  min-height: 200px;
   overflow: hidden;
   padding: 30px 20vw 40px 20vw;
-  margin-bottom: 3em;
 }
 
 #bannerseguros h1 {
@@ -196,10 +197,11 @@ h5 {
 /*---Seccion Descarga---*/
 #download {
   background-color: #03b2b7;
-  padding: 40px 10vw 40px 10vw;
+  padding: 40px 5vw 40px 5vw;
   display: flex;
 }
-#download h2 {
+#download h1,
+h2 {
   color: #fff;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -367,7 +369,69 @@ h5 {
   margin-left: 6%;
   font-size: 18px;
 }
-
+/*Pagina Categorias*/
+/*Menu acordeon*/
+.encabezado-color {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  background-color: #03b2b7;
+  text-align: center;
+  min-height: 150px;
+  overflow: hidden;
+  padding: 20px;
+  margin-bottom: 3em;
+}
+.encabezado-color {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  font-weight: 700;
+}
+.encabezado-color h3,
+h4 {
+  font-family: "Raleway", sans-serif;
+  color: #275d71;
+  font-weight: 500;
+}
+.accordion-item {
+  text-align: center;
+  width: 33%;
+  display: block;
+  float: left;
+  padding-bottom: 30px;
+}
+.accordion-item h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  color: #f7a928;
+  display: block;
+  text-align: left;
+  background-image: url("../images/orange-arrow.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+.accordion-item .accordion-body ul {
+  margin: 0;
+  padding: 0;
+  display: block;
+  text-align: center;
+  float: left;
+  width: 50%;
+}
+.accordion-item .accordion-body ul li {
+  list-style: none;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.categoria-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3em;
+  border-radius: 8px 0px 8px 0px;
+  margin: 0px 5px 10px 5px;
+}
+.categoria-item img {
+  width: 250px;
+}
 /*---Seccion Contacto---*/
 #contacto {
   background-color: #275d71;
